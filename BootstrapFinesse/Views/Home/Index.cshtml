@@ -1,12 +1,13 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Welcome to Example Website 1 <3";
 }
+
 <body>
     <div class="loader_bg modal fade">
         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
     </div>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Connect Example</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,14 +15,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav me-auto">
+                   
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                Home
-                                <span class="visually-hidden">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Your Business</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Pricing</a>
@@ -39,12 +35,30 @@
             </div>
         </nav>
     </header>
+
     <div id="hero" class="px-4 py-5 my-5 text-center text-">
-        <img class="d-block mx-auto mb-5" src="/images/thinkinggraphic.svg" alt="" width="25%" height="25%">
+        <img class="d-block mx-auto mb-5" src="/images/thinkinggraphic.svg" width="40%" height="40%" alt="" >
         <div></div>
         <h1 class="display-5 mb-4 fw-bold">Let Us Take Care Of Your Website!</h1>
         <p class="lead">Website design, hosting and more. For affordable prices! Our designs and services can bring new life to your business.</p>
         <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Find Out How!</button>
     </div>
-    <div class="b-example-divider"></div>
+
+    <div class="a-example-divider"></div>
+
+    <div id="about" class="container col-xxl-8 px-4 py-5">
+        <div  class="row flex-lg-row-reverse align-items-center justify-content-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="~/images/barbershop.jpg" class="d-block mx-lg-auto img-fluid"  width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">A Tech Startup With a Mission </h1>
+            <p class="lead">At Connect Dorset, we want to bring as many small businesses online as possible. We believe it is incredibly important for any brand to have a central website to control all their services - and that's what we aim to provide. </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            </div>
+          </div>
+        </div>
+    </div>
+
+
 </body>
