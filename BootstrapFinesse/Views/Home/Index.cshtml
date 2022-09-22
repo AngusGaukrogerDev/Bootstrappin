@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<body>
+    <div class="loader_bg modal fade">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Connect Example</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Your Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                       
+                    </ul> 
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="hero" class="px-4 py-5 my-5 text-center text-">
+        <img class="d-block mx-auto mb-5" src="/images/thinkinggraphic.svg" alt="" width="25%" height="25%">
+        <div></div>
+        <h1 class="display-5 mb-4 fw-bold">Let Us Take Care Of Your Website!</h1>
+        <p class="lead">Website design, hosting and more. For affordable prices! Our designs and services can bring new life to your business.</p>
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Find Out How!</button>
+    </div>
+    <div class="b-example-divider"></div>
+</body>
