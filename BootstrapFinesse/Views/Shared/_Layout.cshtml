@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="~/css/bootstrap-icons.css" />
     <link rel="stylesheet" href="~/css/custom.min.css" />
     <link rel="stylesheet" href="~/css/prism-okaidia.css" />
-    <!--AOS stylesheets -->
 
+    <!--AOS stylesheets -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/BootstrapFinesse.styles.css" asp-append-version="true" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -53,6 +55,11 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/prism.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

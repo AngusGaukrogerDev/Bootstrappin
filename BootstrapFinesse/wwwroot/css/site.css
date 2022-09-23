@@ -43,3 +43,21 @@ body {
     width: 280px;
 }
 
+hr.solid {
+    border-top: 10px solid #999;
+}
+
+turn {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
